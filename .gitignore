@@ -1,0 +1,8 @@
+hth_console
+*.o
+libhtheap.so
+output.txt
+test/compiled/*
+*.swp
+__pycache__
+.DS_Store

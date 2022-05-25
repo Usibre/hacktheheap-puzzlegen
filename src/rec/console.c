@@ -246,6 +246,7 @@ int help_operation(char **args) {
   for (size_t i = 0; i < CONSOLE_COMMANDS; i++) {
     printf("\t%s\n", console_cmd[i]);
   }
+  printf("For a more detailed list of commands, please see the README.md as part of this project.\n");
   return 0;
 }
 

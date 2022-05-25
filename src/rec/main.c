@@ -21,6 +21,10 @@ char **str_split(char **pointers, char* line) {
 
 int main(int argc, char* argv[]) {
   /* create message queue */
+  if (strcmp(argv[1], "-h")==0 || strcmp(argv[1], "--help")==0) { 
+    printf("Hack the Heap\nHeap Recorder utility Console\nVersion: %s\n"
+      "Start the console without arguments (or using a script as argument) to use the console.\n", RECVERSION);
+  }
   msqid = msgget(IPC_PRIVATE, IPC_CREAT | 0600);
   if (msqid == -1) {
     perror("msgget");

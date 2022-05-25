@@ -29,6 +29,8 @@
 #define COMMENT_DEL '#'
 #endif
 
+#define RECVERSION "1.0.0"
+
 uint8_t DBG = 0;
 int msqid;
 pid_t childpid;

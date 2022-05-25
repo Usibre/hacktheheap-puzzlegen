@@ -48,18 +48,20 @@ This value can be obtained by running `show msqid`.
 | `set`     | `[exec\|executable\|target] (filename)` | Specify file to run |
 | `set`     | `[preload\|ld_preload] (filename)` | Specify the location of the preload library `libhtheap.so` |
 | `set`     | `[out\|outfile] (filename)` | Specify the output file where results will be written to |
+| `set`     | `sleeper (number)` | Set a sleeper that sleeps for (number) seconds after every input (for automatic solutions) |
 | `[save\|export]`     |  | Exports the results to the specified file |
 | `start` | `(arguments)` | Starts the target process with the given arguments |
 | `stop` | | Stops the target process | 
 | `restart` | `(arguments)` | Stops the targets process and starts it again, with the given arguments | 
 | `custom` | `(string)` | Adds a custom line to the output at the given state | 
+| `custom` | `[BUGGED\|TARGET] [NEXT\|(number)]` | Marks the next heap operation as bugged or interesting to overwrite respectively | 
+| `[interact\|i]` | `(input)` | Pipes input to the `stdin` of the application | 
 | `next` | (operation name) | Specifies the end of an operation, and hence the start of the next operation | 
 | `[h\|help]` | | Shows a help message | 
 | `show` | `help` | Shows a help message | 
-| `show` | `version` | Does not work yet | 
 | `show` | `child` | Prints the PID of the manager child process | 
 | `show` | `msqid` | Prints the message queue id | 
-| `show` | `running` | Prints whether the target process is running | 
+| `show` | `running` | Prints whether the target process is running (within the console) | 
 | `[q\|quit\|exit]` | | Exit the console |
 
 
